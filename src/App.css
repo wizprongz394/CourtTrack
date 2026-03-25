@@ -45,8 +45,7 @@ body {
 .container {
   max-width: 700px;
   width: 100%;
-  background: rgba(255, 255, 255, 0.98);
-  backdrop-filter: blur(10px);
+  background: #ffffff;
   border-radius: 32px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1);
   overflow: hidden;
@@ -140,6 +139,7 @@ body {
   font-size: 0.9rem;
   font-weight: 500;
   letter-spacing: 0.5px;
+  color: #e2e8f0;
 }
 
 /* Stats Banner */
@@ -166,6 +166,7 @@ body {
   font-weight: 800;
   line-height: 1;
   margin-bottom: 4px;
+  color: white;
 }
 
 .stat-label {
@@ -173,6 +174,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
   opacity: 0.8;
+  color: #cbd5e1;
 }
 
 .stat-divider {
@@ -198,6 +200,7 @@ body {
   transform: translateY(-50%);
   font-size: 1.1rem;
   opacity: 0.6;
+  color: #64748b;
 }
 
 .search-input {
@@ -207,13 +210,18 @@ body {
   border-radius: 20px;
   font-size: 0.95rem;
   transition: all 0.2s ease;
-  background: #f8fafc;
+  background: #ffffff;
+  color: #1e293b;
+}
+
+.search-input::placeholder {
+  color: #94a3b8;
 }
 
 .search-input:focus {
   outline: none;
   border-color: #3b82f6;
-  background: white;
+  background: #ffffff;
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
@@ -271,6 +279,7 @@ body {
 .form {
   padding: 24px;
   border-bottom: 1px solid #e2e8f0;
+  background: white;
 }
 
 .form-header {
@@ -327,15 +336,31 @@ body {
   border-radius: 14px;
   font-size: 0.95rem;
   transition: all 0.2s ease;
-  background: #f8fafc;
+  background: #ffffff;
+  color: #1e293b;
   font-family: inherit;
+}
+
+.input::placeholder, .textarea::placeholder {
+  color: #94a3b8;
 }
 
 .input:focus, .textarea:focus, select.input:focus {
   outline: none;
   border-color: #3b82f6;
-  background: white;
+  background: #ffffff;
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+select.input {
+  cursor: pointer;
+  background: #ffffff;
+  color: #1e293b;
+}
+
+select.input option {
+  color: #1e293b;
+  background: white;
 }
 
 .textarea {
@@ -557,12 +582,14 @@ body {
   border-radius: 10px;
   transition: all 0.2s;
   opacity: 0.6;
+  color: #64748b;
 }
 
 .delete-btn:hover {
   opacity: 1;
   background: #fee2e2;
   transform: scale(1.05);
+  color: #dc2626;
 }
 
 .case-detail {
@@ -660,6 +687,7 @@ body {
 
 .empty-state p {
   font-size: 0.9rem;
+  color: #64748b;
 }
 
 /* Scrollbar */
